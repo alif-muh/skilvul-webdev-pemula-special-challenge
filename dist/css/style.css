@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 90%;
+  margin-inline: auto;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 100%), url('https://drive.google.com/uc?export=download&id=1WhfNL1h3xsI_dH73ET_a6aeXiwjDe-id');
+  background-size: cover;
+  background-position: 0 60%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* hero style */
+header .hero {
+  color: white;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  text-align: center;
+}
+
+header .hero h1 {
+  font-size: 72px;
+  font-weight: 800;
+}
+
+header .hero p:nth-child(2) {
+  font-size: 28px;
+  margin-top: -10px;
+}
+
+header .hero p:nth-child(3) {
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.box-navigation .logo img {
+  width: 100px;
+  background-color: #232020;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.box-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.box-navigation .box:nth-child(2) ul {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+}
+
+.box-navigation .box:nth-child(2) ul li {
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+.box-navigation .box:nth-child(2) ul li a {
+  text-decoration: none;
+  color: #f3a740;
+  transition: all 0.3s ease;
+}
+
+.box-navigation .box:nth-child(2) ul li a:hover {
+  color: white;
+}
+
+.box-navigation .box:nth-child(3) {
+  padding: 30px;
+  display: none;
+  font-size: 30px;
+}
+
+/* about style */
+
+.about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.about .box-about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .box-about .about-desc {
+  margin-right: 70px;
+}
+
+.about h1 {
+  font-size: 48px;
+  color: #232020;
+}
+
+.about p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #232020;
+}
+
+.about .box-about img {
+  height: 600px;
+  width: 900px;
+  object-fit: cover;
+  object-position: 0% 80%;
+  border-radius: 30px;
+}
+
+/* division style */
+.division {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #132a13;
+}
+
+.division img {
+  width: 300px;
+  height: 450px;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.division h1 {
+  font-weight: 600;
+  color: #f5f5f5;
+}
+
+.division .box-division {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.division .box-division .box {
+  text-align: center;
+}
+
+/* gallery style */
+.gallery {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.gallery .box-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* contact style */
+.contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #132a13;
+}
+
+.contact .box-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact .box-contact h1 {
+  font-size: 54px;
+  color: white;
+}
+
+.contact .box-contact input,
+label,
+button {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.contact .box-contact input {
+  padding: 15px 60px 15px 15px;
+}
+
+.contact .box-contact button {
+  width: 100px;
+  height: 60px;
+  font-size: 16px;
+}
+
+.contact .box-contact label {
+  font-size: 16;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+footer a {
+  color: #023047;
+}
+
+@media screen and (max-width: 1600px) {
+  .about .box-about img {
+    height: 500px;
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .about .box-about img {
+    height: 400px;
+    width: 500px;
+  }
+
+  .about .box-about .about-desc {
+    margin-right: 40px;
+  }
+
+  .about h1 {
+    font-size: 32px;
+  }
+
+  .about p {
+    font-size: 18px;
+  }
+
+  .division .box-division {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .box-navigation .logo img {
+    width: 95px;
+  }
+
+  .box-navigation .box:nth-child(2) {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 100px;
+    text-align: left;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .box-navigation .nav-bar.unfolded {
+    opacity: 1;
+    top: 50px;
+  }
+
+  .box-navigation .box:nth-child(2) ul {
+    flex-direction: column;
+  }
+
+  .box-navigation .box:nth-child(2) ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .box-navigation .box:nth-child(3) {
+    display: inline-block;
+  }
+
+  .box-navigation .ri-menu-3-fill {
+    color: #f3a740;
+  }
+
+  .about .box-about {
+    flex-direction: column-reverse;
+  }
+
+  .about .box-about .about-desc {
+    margin-top: 30px;
+    margin-right: 0px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box-navigation .logo img {
+    width: 90px;
+  }
+
+  .box-navigation .box:nth-child(3) {
+    font-size: 28px;
+  }
+
+  header .hero h1 {
+    font-size: 56px;
+  }
+
+  header .hero p:nth-child(2) {
+    font-size: 24px;
+  }
+
+  header .hero p:nth-child(3) {
+    font-size: 16px;
+  }
+
+  .about .box-about img {
+    height: 300px;
+    width: 400px;
+  }
+
+  .about .box-about .about-desc {
+    margin-right: 0px;
+  }
+
+  .about h1 {
+    font-size: 24px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .box-navigation .logo img {
+    width: 80px;
+  }
+
+  .box-navigation .box:nth-child(3) {
+    font-size: 24px;
+  }
+
+  header .hero h1 {
+    font-size: 48px;
+  }
+
+  header .hero p:nth-child(2) {
+    font-size: 19px;
+  }
+
+  header .hero p:nth-child(3) {
+    font-size: 14px;
+  }
+}
